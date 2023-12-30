@@ -1,5 +1,5 @@
 ## About
-通过pytest框架实现接口自动化测试, 并导出html报告
+通过pytest框架实现接口自动化测试, 并导出html／allure报告
 
 ## Usage
 ```

@@ -1,0 +1,989 @@
+{
+    "dataItem": [
+      {
+        "id": "001",
+        "name": "获取配置",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/config",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "002",
+        "name": "获取二次元分类",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/cartoon_cat",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "003",
+        "name": "获取长视频分类",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/cat",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "004",
+        "name": "获取轮播图",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/carousel",
+        "method":"get",
+        "parameters":{
+          "params":"{\"cid\":5}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "005",
+        "name": "获取金币",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/gold",
+        "method":"get",
+        "parameters":{
+          "params":"{\"cid\":5}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "006",
+        "name": "获取伪直播分类",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/live_cat",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "007",
+        "name": "获取短视频分类",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/short_cat",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "008",
+        "name": "获取充值方式",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/pay_type",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "009",
+        "name": "获取手机号国码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/area_code",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "010",
+        "name": "绑定手机/找回账号",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/bind_phone",
+        "method":"post",
+        "parameters":{
+          "params":"{\"area_code\": \"886\", \"phone\":\"958035350\",\"verify_code\":\"885916\"}"
+        },
+        "expectdata": {
+          "code": "-5"
+        }
+      },
+      {
+        "id": "011",
+        "name": "用户设置",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/user/edit",
+        "method":"post",
+        "parameters":{
+          "params":"{\"nickname\":\"屋顶上的拾荒人-75xxx\",\"sex\":\"0\",\"desc\":\"我是简介\", \"avatar\":\"091/af4f9070f7465efb23d5e5d563d2deab.png\", \"bg_img\":\"091/af4f9070f7465efb23d5e5d563d2deab.png\"}"
+        },
+        "expectdata": {
+          "code": "-2"
+        }
+      },
+      {
+        "id": "012",
+        "name": "获取会员卡",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/vip",
+        "method":"get",
+        "parameters":{
+          "params":"{\"sort\":0}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "013",
+        "name": "获取广告",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/ad/index",
+        "method":"get",
+        "parameters":{
+            "params":"{\"flag\":\"home_page\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "014",
+        "name": "生成邀请码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/get_invite_code",
+        "method":"get",
+        "parameters":{
+            "params":"{\"uid\":49, \"type\":1, \"channel\":2}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "015",
+        "name": "发送短信验证码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/send_sms_code",
+        "method":"post",
+        "parameters":{
+            "params":"{\"area_code\": \"886\", \"phone\":\"958035350\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "016",
+        "name": "绑定用户邀请码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/bind_invite_code",
+        "method":"post",
+        "parameters":{
+            "params":"{\"code\":\"XKKXW36VFY\"}"
+        },
+        "expectdata": {
+          "code": "-7"
+        }
+      },
+      {
+        "id": "017",
+        "name": "获取应用中心列表",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/link/index",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "018",
+        "name": "获取聊天记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/chat_log",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "019",
+        "name": "获取观影券商品",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/ticket",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "020",
+        "name": "获取购买记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/purchase_record",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "021",
+        "name": "获取订单/账单记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/order_list",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "022",
+        "name": "铭森订单查询",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/order_queryMS",
+        "method":"post",
+        "parameters":{
+            "params":"{\"order_id\":\"2\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "023",
+        "name": "获取消息通知列表",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/app_message",
+        "method":"get",
+        "parameters":{
+            "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "024",
+        "name": "获取帖子详情",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/show",
+        "method":"get",
+        "parameters":{
+            "params":"{\"id\": 3}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "025",
+        "name": "关注用户/UP主",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/attention",
+        "method":"post",
+        "parameters":{
+            "params":"{\"to_uid\":587330608}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "026",
+        "name": "点赞",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/like",
+        "method":"post",
+        "parameters":{
+            "params":"{\"video_id\":6}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "027",
+        "name": "应用中心评分",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/link_star",
+        "method":"post",
+        "parameters":{
+            "params":"{\"link_id\":1, \"star\": 3.5}"
+        },
+        "expectdata": {
+          "code": "-4"
+        }
+      },
+      {
+        "id": "028",
+        "name": "获取订单详情",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/order/show",
+        "method":"get",
+        "parameters":{
+            "params":"{\"order_id\": 2311122250394989385}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "029",
+        "name": "支付下單",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/pay",
+        "method":"post",
+        "parameters":{
+            "params":"{\"type\": 1, \"goods_id\": 1, \"pay_type\": 1} "
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "029",
+        "name": "评论",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/comment",
+        "method":"post",
+        "parameters":{
+            "params":"{\"post_id\":1, \"content\": \"评论了你\"}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "030",
+        "name": "获取社区板块分类",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/cat",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "031",
+        "name": "发帖",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/post",
+        "method":"post",
+        "parameters":{
+          "params":"{\"catid\":1, \"content\": \"xxx\", \"thumbs\": [\"20231203/9d1adad58ebd18305df46dafb0afbb2c97206.png\", \"20231203/9d1adad58ebd18305df46dafb0afbb2c97205.png\"], \"title\": \"标题\", \"restricted\": 2, \"gold\": 30, \"wx\": \"kosplay\", \"video\": [], \"cover_img\": []}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "032",
+        "name": "获取帖子列表",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/index",
+        "method":"get",
+        "parameters":{
+          "params":"{\"catid\": 1, \"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "033",
+        "name": "获取帖子评论列表",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/comment_list",
+        "method":"get",
+        "parameters":{
+          "params":"{\"post_id\": 1, \"comment_id\": 4, \"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "034",
+        "name": "视频评论",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/comment",
+        "method":"post",
+        "parameters":{
+          "params":"{\"video_id\":1, \"content\": \"评论了你\"}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "035",
+        "name": "视频评论回复",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/reply",
+        "method":"post",
+        "parameters":{
+          "params":"{\"video_id\":1, \"comment_id\":3, \"content\": \"回复了你\"}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "036",
+        "name": "获取视频评论列表",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/comment_list",
+        "method":"get",
+        "parameters":{
+          "params":"{\"video_id\": 1, \"comment_id\": 3, \"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "037",
+        "name": "购买视频",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/buy/video",
+        "method":"post",
+        "parameters":{
+          "params":"{\"id\":1}"
+        },
+        "expectdata": {
+          "code": "-6"
+        }
+      },
+      {
+        "id": "038",
+        "name": "购买帖子",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/buy/post",
+        "method":"post",
+        "parameters":{
+          "params":"{\"id\":1}"
+        },
+        "expectdata": {
+          "code": "-6"
+        }
+      },
+      {
+        "id": "039",
+        "name": "获取热搜关键词",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/hot_keywords",
+        "method":"get",
+        "parameters":{
+          "params":"{\"id\":1}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "040",
+        "name": "获取搜索选项",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/cat_tree",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "041",
+        "name": "搜索",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/search",
+        "method":"get",
+        "parameters":{
+          "params":"{\"keyword\": \"在客厅与人妻姐姐淫叫超级爽\", \"page\":1,\"page_size\":10, \"type\": 1, \"restricted\": null, \"sort\": null}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "042",
+        "name": "推荐",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/recommand",
+        "method":"get",
+        "parameters":{
+          "params":"{\"video_id\": 6}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "043",
+        "name": "分类搜索",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/cat_search",
+        "method":"get",
+        "parameters":{
+          "params":"{\"catid\": 42}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "044",
+        "name": "标签搜索",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/tag_search",
+        "method":"get",
+        "parameters":{
+          "params":"{\"tag_id\": 2}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "045",
+        "name": "收藏",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/collect",
+        "method":"post",
+        "parameters":{
+          "params":"{\"video_id\":6}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "046",
+        "name": "视频缓存",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/video_cache",
+        "method":"post",
+        "parameters":{
+          "params":"{\"video_id\":6}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "047",
+        "name": "获取用户信息",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/user_info",
+        "method":"get",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "048",
+        "name": "兑换码兑换",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/exchange_by_code",
+        "method":"post",
+        "parameters":{
+          "params":"{\"code\":\"XKKXW36VFY\"}"
+        },
+        "expectdata": {
+          "code": "-5"
+        }
+      },
+      {
+        "id": "049",
+        "name": "签到",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/sign",
+        "method":"post",
+        "parameters":{},
+        "expectdata": {
+          "code": "-6"
+        }
+      },
+      {
+        "id": "050",
+        "name": "获取兑换记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/exchange_log",
+        "method":"get",
+        "parameters":{
+          "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "051",
+        "name": "获取邀请记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/invite_record",
+        "method":"get",
+        "parameters":{
+          "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "052",
+        "name": "获取钱包流水记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/transaction",
+        "method":"get",
+        "parameters":{
+          "params":"{\"page\":1,\"page_size\":10}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "053",
+        "name": "删除浏览记录",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/del_view",
+        "method":"post",
+        "parameters":{
+          "params":"{\"video_id\":[6]}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "054",
+        "name": "发送聊天消息",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/chat",
+        "method":"post",
+        "parameters":{
+          "params":"{\"to_uid\":587330608,\"content\":\"你好\",\"content_type\":1}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "055",
+        "name": "帖子点赞",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/like",
+        "method":"post",
+        "parameters":{
+          "params":"{\"post_id\":6}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "056",
+        "name": "评论回复",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/reply",
+        "method":"post",
+        "parameters":{
+          "params":"{\"post_id\":1, \"comment_id\":4, \"content\": \"回复了你\"}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "057",
+        "name": "打赏",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/reward",
+        "method":"post",
+        "parameters":{
+          "params":"{\"post_id\":6, \"to_uid\":107646923, \"money\":2, \"remark\":\"就是要干\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "058",
+        "name": "社区搜索",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/search",
+        "method":"get",
+        "parameters":{
+          "params":"{\"keyword\": \"真实乱伦 强上母亲\", \"page\":1,\"page_size\":10, \"catid\": 1, \"sort\": null}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "059",
+        "name": "AES编码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/aes_en",
+        "method":"post",
+        "parameters":{
+          "s":"",
+          "flag":"home_page"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "060",
+        "name": "AES解码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/aes_de",
+        "method":"post",
+        "parameters":{
+          "params":"eyJpdiI6InJPQktuLzdWaGtDQ2ZML0k2cGlQL1E9PSIsInZhbHVlIjoidWdWcWE1L216cFVzTFBmbGsraUlzN1RENWk2RS9yTjByQmdnNC8rNS9hVT0iLCJtYWMiOiI3YzVkNmNmMzYwMTA1YjFhMGQyMWM0Y2IwNmEzYjJjMjU5MzgyMTllNjBjZGJlODE0OWI5N2U4MzE2ZTA4NGEyIn0"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "061",
+        "name": "咖啡订单查询",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/order_queryKF",
+        "method":"post",
+        "parameters":{
+            "params":"{\"order_id\":\"2\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "062",
+        "name": "登出",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/logout",
+        "method":"post",
+        "parameters":{},
+        "expectdata": {
+          "code": "0"
+        }
+      }
+    ]
+  }

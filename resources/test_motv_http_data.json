@@ -451,22 +451,6 @@
         }
       },
       {
-        "id": "029",
-        "name": "评论",
-        "headers":{
-          "language":"cn",
-          "Accept":"application/json"
-        },
-        "url":"/community/comment",
-        "method":"post",
-        "parameters":{
-            "params":"{\"post_id\":1, \"content\": \"评论了你\"}"
-        },
-        "expectdata": {
-          "code": "-3"
-        }
-      },
-      {
         "id": "030",
         "name": "获取社区板块分类",
         "headers":{
@@ -973,6 +957,70 @@
       },
       {
         "id": "062",
+        "name": "上传图片",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/upload_image",
+        "method":"post",
+        "parameters":{
+          "file":"../resources/example.png"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "063",
+        "name": "上传文件",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/upload_file",
+        "method":"post",
+        "parameters":{
+          "file":"../resources/example.txt"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "064",
+        "name": "评论",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/community/comment",
+        "method":"post",
+        "parameters":{
+            "params":"{\"post_id\":1, \"content\": \"评论了你\"}"
+        },
+        "expectdata": {
+          "code": "-3"
+        }
+      },
+      {
+        "id": "065",
+        "name": "解码邀请码",
+        "headers":{
+          "language":"cn",
+          "Accept":"application/json"
+        },
+        "url":"/decode_invite_code",
+        "method":"get",
+        "parameters":{
+            "params":"{\"code\":\"000Q7S\"}"
+        },
+        "expectdata": {
+          "code": "0"
+        }
+      },
+      {
+        "id": "066",
         "name": "登出",
         "headers":{
           "language":"cn",

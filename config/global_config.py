@@ -2,4 +2,4 @@
 # 生产环境域名
 #MOTV_HTTP_HOST = 'https://example.com/api/v1'
 # 测试环境域名
-MOTV_HTTP_HOST = 'https://example.com/api/v1'
+MOTV_HTTP_HOST = 'https://tstapi.motv.local/api/v1'

@@ -7,8 +7,12 @@
 pytest test_motv_http_interface.py 或
 pytest -m httptest
 
+# 压力测试
+pytest -m performance
+
 # 导出pytest-html报告
 pytest test_motv_http_interface.py --html=../testoutput/report.html
+pytest test_performance.py --html=../testoutput/report.html
 
 # 导出allure报告
 pytest --alluredir=../testoutput/result

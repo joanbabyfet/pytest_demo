@@ -8,14 +8,14 @@ http请求工具类
 '''
 class HttpUtils:
     @staticmethod
-    def http_post(headers, url, parameters):
+    def http_post(headers, url, parameters, files):
         urllib3.disable_warnings() # 关闭ssl警告
 
         print('接口请求url：' + url)
         print("接口请求method：post")
         print('接口请求headers：' + json.dumps(headers))
         print('接口请求parameters：' + json.dumps(parameters))
-        res = requests.post(url, data=parameters, headers=headers, verify=False)
+        res = requests.post(url, data=parameters, headers=headers, verify=False, files=files)
         print('接口返回结果：' + res.text)
         if res.status_code != 200:
             raise Exception(u'请求异常')
